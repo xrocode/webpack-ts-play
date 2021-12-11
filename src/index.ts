@@ -12,13 +12,9 @@ for (let i = 0; i < 10; i++) {
 
 console.log('im here !');
 
-function clicked() {
-  console.log("you clicked me")
-}
 
-
-function xclicked() {
-  console.log('xclicked!');
+export function xclicked() {
+  console.log('xclicked! ' + Date.now());
   let body = document.body;
   workOnBody(body);
 }
@@ -26,7 +22,15 @@ function xclicked() {
 
 function workOnBody(body: HTMLElement) {
 
-  //
+  let z = Array.from(body.children);
+  for (let el of z) {
+    console.log(el);
+    console.log(el.classList);
+  }
+
+  // let z = body.children as Array
+  // let children = [...body.children];
+
   
 }
 
