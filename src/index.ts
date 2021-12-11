@@ -12,11 +12,32 @@ for (let i = 0; i < 10; i++) {
 
 console.log('im here !');
 
+class lolponent {
+
+  container: HTMLDivElement;
+
+  constructor() {
+    this.container = document.createElement('div');
+    this.container.innerHTML = 'created ' + Date.now() + 'yes'
+  }
+
+  render(parent: Element) {
+    parent.appendChild(this.container);
+  }
+
+}
+
+
 
 export function xclicked() {
   console.log('xclicked! ' + Date.now());
   let body = document.body;
-  workOnBody(body);
+  // workOnBody(body);
+
+  let nlol = new lolponent()
+  nlol.render(body);
+
+
 }
 
 
@@ -31,8 +52,10 @@ function workOnBody(body: HTMLElement) {
   // let z = body.children as Array
   // let children = [...body.children];
 
-  
+
 }
+
+
 
 
 
