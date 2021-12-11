@@ -14,11 +14,13 @@ console.log('im here !');
 
 class lolponent {
 
+  timeGenerated: number;
   container: HTMLDivElement;
 
   constructor() {
     this.container = document.createElement('div');
-    this.container.innerHTML = 'created ' + Date.now() + 'yes'
+    this.timeGenerated = Date.now();
+    this.container.innerHTML = 'created ' + this.timeGenerated + 'yes'
   }
 
   render(parent: Element) {
@@ -36,6 +38,8 @@ export function xclicked() {
 
   let nlol = new lolponent()
   nlol.render(body);
+  console.log(nlol.timeGenerated);
+  
 
 
 }
