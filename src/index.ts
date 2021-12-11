@@ -10,8 +10,10 @@ function component() {
   // alert('hi!')
 
   let x = 34;
-  x = 'ff';
-  
+  x = 44;
+
+  element.innerHTML += ' and x is: ' + x;
+
 
 
 
