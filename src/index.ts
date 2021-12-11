@@ -13,4 +13,13 @@ function component() {
   return element;
 }
 
-document.body.appendChild(component());
+function ready() {
+  document.body.appendChild(component());
+
+}
+
+window.addEventListener('load', (event) => {
+  console.log('page is fully loaded');
+  console.log(event);
+  ready();
+});
