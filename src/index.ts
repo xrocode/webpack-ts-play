@@ -9,8 +9,9 @@ function component() {
   element.innerHTML = 'TS works!'
   // alert('hi!')
 
-  // let x = 34;
-  // x = 'ff';
+  let x = 34;
+  x = 'ff';
+  
 
 
 
