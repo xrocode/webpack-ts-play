@@ -5,7 +5,7 @@ function component() {
   // npx webpack
   // npx webpack --watch
   element.innerHTML = _.join(['Hello', 'webpack', 'ahahah', 'watching', 'ok'], ' ');
-
+// ff
   return element;
 }
 
