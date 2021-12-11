@@ -1,25 +1,24 @@
-function component() {
-  const element = document.createElement('div');
 
-  element.innerHTML = 'TS works!'
-  // alert('hi!')
+console.log('hello');
 
-  let x = 34;
-  x = 44;
+console.log('ho ho ho');
 
-  element.innerHTML += ' and x is: ' + x;
+let x = 40;
 
-
-  return element;
-}
-
-function ready() {
-  document.body.appendChild(component());
+for (let i = 0; i < 10; i++) {
+  console.log(i);
 
 }
 
-window.addEventListener('load', (event) => {
-  console.log('page is fully loaded');
-  console.log(event);
-  ready();
-});
+
+let ourdiv = document.getElementById('mydiv');
+console.log(ourdiv);
+
+ourdiv.innerHTML = 'changed!'
+
+let newdiv = document.createElement('div');
+newdiv.innerHTML = 'this is a new div!'
+
+document.body.appendChild(newdiv)
+newdiv.id = 'cooldiv';
+
