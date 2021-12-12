@@ -12,6 +12,19 @@ for (let i = 0; i < 10; i++) {
 
 console.log('im here !');
 
+
+
+function generateList(fruits: string[]) {
+  let ul = document.createElement('ul');
+
+  fruits.forEach((el) => {
+    let li = document.createElement('li')
+    li.appendChild(document.createTextNode(el));
+    ul.appendChild(li);
+  })
+  return ul
+}
+
 class lolponent {
 
   timeGenerated: number;
@@ -36,10 +49,13 @@ export function xclicked() {
   let body = document.body;
   // workOnBody(body);
 
-  let nlol = new lolponent()
-  nlol.render(body);
-  console.log(nlol.timeGenerated);
-  
+  // let nlol = new lolponent()
+  // nlol.render(body);
+  // console.log(nlol.timeGenerated);
+
+  let fruits = ['Apple', 'Orange', 'Banana']
+  document.getElementById('xlist').appendChild(generateList(fruits))
+    
 
 
 }
