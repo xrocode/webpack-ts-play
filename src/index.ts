@@ -13,6 +13,7 @@ for (let i = 0; i < 10; i++) {
 console.log('im here !');
 
 
+x = 33;
 
 function generateList(fruits: string[]) {
   let ul = document.createElement('ul');

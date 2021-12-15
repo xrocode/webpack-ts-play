@@ -9,9 +9,10 @@ function myfunc(z) {
 let arr = ['abibi', 'ififi', 'ddodo'];
 myfunc(arr);
 let al = arr.push('7');
+arr.push('49');
 console.log('array lenght:', al);
 myfunc(arr);
 for (let x of arr) {
-    console.log(x);
+    console.log(x + ' ' + '!!!');
 }
 console.log(arr);
